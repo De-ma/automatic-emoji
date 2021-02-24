@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Automatic-Emoji",
+  "description": "Replace all emojis with better lookin emojis",
+  "homepage_url": "https://dabuadas.dev",
+  "version": "1.0",
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.messenger.com/*"],
+      "js": ["substitute.js"]
+    }
+  ]
+}
